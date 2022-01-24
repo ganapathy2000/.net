@@ -41,3 +41,43 @@ namespace amicable_number<br>
 output:<br>
 ![image](https://user-images.githubusercontent.com/98145098/150479686-83570f87-b1e4-46b4-aa82-a8ebc18b773a.png)
 ![image](https://user-images.githubusercontent.com/98145098/150481026-c0d77744-60dc-4f23-86c3-8ef1115bb567.png)
+
+
+
+
+
+
+
+
+
+
+using System;
+
+namespace binary2<br>
+{<br>
+    class binary2<br>
+    {<br>
+        static void Main(string[] args)<br>
+        {<br>
+            int number, digit = 1;<br>
+
+            Console.WriteLine("\n enter the number of lines:");
+
+            number = Convert.ToInt32(Console.ReadLine());
+            for (int i = 1; i <= number; i++)
+            {
+                for (int space = number - i; space > 0; space--)
+                {
+                    Console.Write(" ");
+                }
+                for (int j = 0; j < i; j++)
+                {
+                    Console.Write(digit + " ");
+                    digit = (digit == 1) ? 0 : 1;
+                }
+                Console.Write("\n");
+            }
+        }
+    }
+}
+    
