@@ -104,19 +104,19 @@ namespace binary2<br>
 
 
 //C# pgm to implement Principle of Delegate// using System;
-namespace Exercises
-{
-class Delegates
-{
-delegate string UppercaseDelegate(string input);
-static string UppercaseFirst(string input)
-{
-char[] buffer = input.ToCharArray();
-buffer[0] =char.ToUpper(buffer[0]);
-return new string(buffer);
-}
-static string UppercaseLast(string input)
-{
+namespace Exercises<br>
+{<br>
+class Delegates<br>
+{<br>
+delegate string UppercaseDelegate(string input);<br>
+static string UppercaseFirst(string input)<br>
+{<br>
+char[] buffer = input.ToCharArray();<br>
+buffer[0] =char.ToUpper(buffer[0]);<br>
+return new string(buffer);<br>
+}<br>
+static string UppercaseLast(string input)<br>
+{<br>
 char[] buffer =input.ToCharArray();
 buffer[buffer.Length - 1] = char.ToUpper(buffer[buffer.Length - 1]);
 return new string(buffer);
