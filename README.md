@@ -1,5 +1,5 @@
 # .net
-1.c# program to check whether the entered number is Amicable number/not :
+1.C# program to check whether the entered number is Amicable number/not :
 using System;<br>
 
 namespace amicable_number<br>
@@ -50,7 +50,7 @@ output:<br>
 
 
 
-2.c# program to print a binary triangle:
+2.C# program to print a binary triangle:
 
 using System;
 
@@ -99,7 +99,7 @@ output:
 
 
 
-3.C# program to implement Principle of Delegate
+3.C# program to implement Principle of Delegate input strings to uppercase first,last and enter string:
 using System;<br>
  namespace Exercises<br>
 {<br>
@@ -144,7 +144,7 @@ Output
 
 
 
-4.c# program to 2D
+4.C# program  that bench marks 2D jagged array allocation using system:
     using System;<br>
 using System.Diagnostics;<br>
 namespace array<br>
@@ -201,7 +201,7 @@ Output:
 
 
 
-5.c# program to generate reg num automatically
+5.C# program to generate reg num automatically for 100 Students using static constructor:
 using System;<br>
 namespace Exercises<br>
 {<br>
@@ -235,7 +235,7 @@ Output:
 
 
 
-6.c# program to print "is"
+6.C# program to print "is" in a given sentences:
 using System;<br>
 namespace Exercises<br>
 {<br>
@@ -272,7 +272,7 @@ namespace Exercises<br>
     
     
     
- 7.c# programfor matrix entry
+ 7.C# program to find sum of values of Diagonal for matrix:
  using System;<br>
 namespace Exercises<br>
 {<br>
@@ -371,7 +371,7 @@ Output:
 
 
 
-9.c# program using multilevel inheritance with virtual methods:
+9.c# program using multilevel inheritance with virtual methods(displaying student details):
 
 using System;<br>
 namespace Exercises<br>
