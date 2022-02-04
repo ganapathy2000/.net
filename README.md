@@ -97,46 +97,47 @@ namespace binary2<br>
 
 
 
-
-
-
-
-
-
-//C# pgm to implement Principle of Delegate// using System;
-namespace Exercises<br>
+//C# pgm to implement Principle of Delegate//
+using System;<br>
+ namespace Exercises<br>
 {<br>
-class Delegates<br>
-{<br>
-delegate string UppercaseDelegate(string input);<br>
-static string UppercaseFirst(string input)<br>
-{<br>
-char[] buffer = input.ToCharArray();<br>
-buffer[0] =char.ToUpper(buffer[0]);<br>
-return new string(buffer);<br>
+    class Delegates<br>
+    {<br>
+        delegate string UppercaseDelegate(string input);<br>
+        static string UppercaseFirst(string input)<br>
+        {<br>
+            char[] buffer = input.ToCharArray();<br>
+            buffer[0] =char.ToUpper(buffer[0]);<br>
+            return new string(buffer);<br>
+        }<br>
+        static string UppercaseLast(string input)<br>
+        {<br>
+            char[] buffer =input.ToCharArray();<br>
+            buffer[buffer.Length - 1] = char.ToUpper(buffer[buffer.Length - 1]);<br>
+            return new string(buffer);<br>
+        }<br>
+        static string UppercaseALL(string input)<br>
+        {<br>
+            return input.ToUpper();<br>
+        }<br>
+        static void WriteOutput(string input, UppercaseDelegate del)<br>
+        {<br>
+            Console.WriteLine("iutput string:{0}", input);<br>
+            Console.WriteLine("Output string:{0}", del(input));<br>
+        }<br>
+        static void Main()<br>
+        {<br>
+            WriteOutput("tom", new UppercaseDelegate(UppercaseFirst));<br>
+            WriteOutput("tom", new UppercaseDelegate(UppercaseLast));<br>
+            WriteOutput("tom", new UppercaseDelegate(UppercaseALL));<br>
+            Console.ReadLine();<br>
+        }<br>
+ }<br>
 }<br>
-static string UppercaseLast(string input)<br>
-{<br>
-char[] buffer =input.ToCharArray();
-buffer[buffer.Length - 1] = char.ToUpper(buffer[buffer.Length - 1]);
-return new string(buffer);
-}
-static string UppercaseALL(string input)
-{
-return input.ToUpper();
-}
-static void WriteOutput(string input, UppercaseDelegate del)
-{
-Console.WriteLine("iutput string:{0}", input);
-Console.WriteLine("Output string:{0}", del(input));
-}
-static void Main()
-{
-WriteOutput("tom", new UppercaseDelegate(UppercaseFirst));
-WriteOutput("tom", new UppercaseDelegate(UppercaseLast));
-WriteOutput("tom", new UppercaseDelegate(UppercaseALL));
-Console.ReadLine();
-}
-}
-}
 Output
+
+
+
+
+
+
