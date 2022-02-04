@@ -527,3 +527,6 @@ namespace Exercises<br>
 }<br>
 
 Output:
+
+![box](https://user-images.githubusercontent.com/98145098/152478631-f5476206-e625-42c0-9eb6-296ab66007c7.png)
+
