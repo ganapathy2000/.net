@@ -273,10 +273,10 @@ namespace Exercises<br>
     
     
  7.c# programfor matrix entry
-  using System;<br>
+ using System;<br>
 namespace Exercises<br>
 {<br>
-class SumOfDiagonals<br>
+    class SumOfDiagonals<br>
     {<br>
         static void Main(string[] args)<br>
         {<br>
@@ -295,16 +295,17 @@ class SumOfDiagonals<br>
             }<br>
             Matrix = new int[MaxRow, MaxCol];<br>
             for (int i = 0; i < MaxRow; i++)<br>
-            {<br><br>
+            {<br>
+<br>
                 for (int j = 0; j < MaxCol; j++)<br>
                 {<br>
-                    Console.Write("\nEnter the ({0},{l})th element of the matrix: ", (i + 1), (j + 1));<br>
+                    Console.Write("\n Enter the ({0},{1})th element of the matrix:", (i + 1), (j + 1));<br>
                     Matrix[i, j] = Convert.ToInt32(Console.ReadLine());<br>
                 }<br>
             }<br>
             Console.WriteLine("\nThe entered Matrix is:");<br>
             for (int i = 0; i < MaxRow; i++)<br>
-            {
+            {<br>
                 for (int j = 0; j < MaxCol; j++)<br>
                 {<br>
                     Console.Write(" " + Matrix[i, j]);<br>
@@ -313,13 +314,13 @@ class SumOfDiagonals<br>
                         Sum += Matrix[i, j];<br>
                     }<br>
                 }<br>
-
                 Console.WriteLine();<br>
             }<br>
-                Console.WriteLine("\nThe Sum of Diagonal is " + Sum);<br>
-            }<br>
+            Console.WriteLine("\nThe Sum of Diagonal is " + Sum);<br>
         }<br>
     }<br>
+}<br>
+    
     Output:
     
     
