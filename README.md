@@ -297,7 +297,8 @@ namespace Exercises<br>
     
     
     
-    ![frequency](https://user-images.githubusercontent.com/98145098/152474337-4cb84497-20ae-47da-93c8-ed49f503d8b6.png)
+   ![frequency](https://user-images.githubusercontent.com/98145098/152474434-5558a61b-f7d0-4b40-a4c9-108d02a4da57.png)
+
 
     
     
