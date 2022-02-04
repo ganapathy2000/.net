@@ -362,4 +362,33 @@ class SumOfDiagonals<br>
    
    
     
-    
+  
+  
+  using System;
+namespace Exercises<br>
+{<br>
+    class GrayCode<br>
+    {<br>
+        static int getGray(int n)<br>
+        {<br>
+            return n^(n>>1);<br>
+
+        }<br>
+        static void Main (string[]args)<br>
+        {<br>
+            int inputNum,GrayNum;<br>
+            Console.Write("\n Enter Decimal no:");<br>
+            inputNum = Convert.ToInt32(Console.ReadLine());<br>
+
+            Console.WriteLine("\n Binary equivalent of {0} :{1} " ,inputNum,<br>
+                Convert.ToString(inputNum,2));<br>
+
+            GrayNum=getGray(inputNum);<br>
+            Console.WriteLine("\n Binary equivalent of {0} :{1} ", inputNum,<br>
+               Convert.ToString(GrayNum, 2));<br>
+        }<br>
+
+
+    }<br>
+}<br>
+
