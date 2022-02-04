@@ -141,3 +141,42 @@ Output
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+//c# pgm to generate reg num automatically//
+using System;<br>
+namespace Exercises<br>
+{<br>
+    class RegisterNum<br>
+    {<br>
+        int regNo;<br>
+        static int startNum;<br>
+        static  RegisterNum()<br>
+        {<br>
+            startNum = 20210000;<br>
+        }<br>
+        RegisterNum()<br>
+        {<br>
+        regNo=++startNum;<br>
+        }<br>
+        public static void Main(String[] args)<br>
+        {<br>
+            for(int i=0;i<100;i++)<br>
+            {<br>
+                RegisterNum Student = new RegisterNum();<br>
+                Console.WriteLine("student{0}:{1}", i+1, Student.regNo);<br>
+                    }<br>
+        }<br>
+    }<br>
+}<br>
+
+Output:
