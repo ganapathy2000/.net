@@ -363,7 +363,7 @@ class SumOfDiagonals<br>
    
     
   
-  
+ c# program to create a gray code: 
   using System;
 namespace Exercises<br>
 {<br>
@@ -373,22 +373,26 @@ namespace Exercises<br>
         {<br>
             return n^(n>>1);<br>
 
-        }<br>
-        static void Main (string[]args)<br>
-        {<br>
-            int inputNum,GrayNum;<br>
-            Console.Write("\n Enter Decimal no:");<br>
-            inputNum = Convert.ToInt32(Console.ReadLine());<br>
+        }
+        static void Main (string[]args)
+        {
+            int inputNum,GrayNum;
+            Console.Write("\n Enter Decimal no:");
+            inputNum = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("\n Binary equivalent of {0} :{1} " ,inputNum,<br>
-                Convert.ToString(inputNum,2));<br>
+            Console.WriteLine("\n Binary equivalent of {0} :{1} " ,inputNum,
+                Convert.ToString(inputNum,2));
 
-            GrayNum=getGray(inputNum);<br>
-            Console.WriteLine("\n Binary equivalent of {0} :{1} ", inputNum,<br>
-               Convert.ToString(GrayNum, 2));<br>
-        }<br>
+            GrayNum=getGray(inputNum);
+            Console.WriteLine("\n Binary equivalent of {0} :{1} ", inputNum,
+               Convert.ToString(GrayNum, 2));
+        }
 
 
-    }<br>
-}<br>
+    }
+}
 
+Output:
+
+
+![gray](https://user-images.githubusercontent.com/98145098/152475429-5c923dd0-4e45-4703-8bf4-50ec77c0f101.png)
