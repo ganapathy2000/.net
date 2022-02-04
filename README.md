@@ -81,11 +81,12 @@ namespace binary2<br>
     }
 }
     
+output:
 
 
 
 
-
+![binary](https://user-images.githubusercontent.com/98145098/152476808-80244538-3ab1-4d63-a704-0522804433a8.png)
 
 
 
