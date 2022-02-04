@@ -1,4 +1,5 @@
 # .net
+1.c# program to check whether the entered number is Amicable number/not :
 using System;<br>
 
 namespace amicable_number<br>
@@ -49,7 +50,7 @@ output:<br>
 
 
 
-
+2.c# program to print a binary triangle:
 
 using System;
 
@@ -98,7 +99,7 @@ output:
 
 
 
-//C# pgm to implement Principle of Delegate//
+3.C# program to implement Principle of Delegate
 using System;<br>
  namespace Exercises<br>
 {<br>
@@ -143,9 +144,7 @@ Output
 
 
 
-
-
-//c# pgm to 2D//
+4.c# program to 2D
     using System;<br>
 using System.Diagnostics;<br>
 namespace array<br>
@@ -197,22 +196,12 @@ Output:
 
 
 
-
-
 ![Screenshot 2022-02-04 101746](https://user-images.githubusercontent.com/98145098/152473528-3d20d302-aad3-4ce8-8c80-da4081fcbb56.png)
 
 
 
 
-
-
-
-
-
-
-
-
-//c# pgm to generate reg num automatically//
+5.c# program to generate reg num automatically
 using System;<br>
 namespace Exercises<br>
 {<br>
@@ -246,29 +235,7 @@ Output:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//c# pgm to print "is"//
+6.c# program to print "is"
 using System;<br>
 namespace Exercises<br>
 {<br>
@@ -305,9 +272,7 @@ namespace Exercises<br>
     
     
     
-    
-    
-     //c# pgm for matrix entry//<br>
+ 7.c# programfor matrix entry
   using System;<br>
 namespace Exercises<br>
 {<br>
@@ -364,7 +329,7 @@ class SumOfDiagonals<br>
    
     
   
- c# program to create a gray code: 
+ 8.c# program to create a gray code: 
   using System;
 namespace Exercises<br>
 {<br>
@@ -401,7 +366,7 @@ Output:
 
 
 
-c# program using multilevel inheritance with virtual methods:
+9.c# program using multilevel inheritance with virtual methods:
 
 using System;<br>
 namespace Exercises<br>
