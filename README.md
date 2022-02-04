@@ -324,7 +324,8 @@ namespace Exercises<br>
     Output:
     
     
-    ![matrix](https://user-images.githubusercontent.com/98145098/152479546-c1b2293c-95c0-437f-aba8-a50dd718d63f.png)
+   ![matrix](https://user-images.githubusercontent.com/98145098/152479789-751cccd1-8697-499c-99ac-9d124d5a79b4.png)
+
 
 
    
