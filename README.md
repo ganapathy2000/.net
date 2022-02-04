@@ -136,6 +136,7 @@ using System;<br>
 }<br>
 Output
 
+![Screenshot 2022-02-04 101346](https://user-images.githubusercontent.com/98145098/152473212-7ad29f57-deca-42fb-a403-838c5a028b10.png)
 
 
 
