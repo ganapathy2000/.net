@@ -241,6 +241,7 @@ namespace Exercises<br>
 Output:
 
 
+![Screenshot 2022-02-04 102226](https://user-images.githubusercontent.com/98145098/152473990-3b118e43-aef4-44aa-8279-48f6b6f4c6be.png)
 
 
 
