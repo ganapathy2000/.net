@@ -496,7 +496,7 @@ namespace Exercises<br>
     {<br>
         public static void Main(string[] args)<br>
         {<br>
-            MarksDetails Student1 = new MarksDetails("Shri Bhat", 21, "Male", 20190001, "MSc", 5, new int[] { 77, 80, 98, 95, 90 });<br>
+            MarksDetails Student1 = new MarksDetails("abhi", 21, "Male", 20190001, "MSc", 5, new int[] { 77, 80, 98, 95, 90 });<br>
             Student1.Display();<br>
         }<br>
     }<br>
