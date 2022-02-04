@@ -192,6 +192,8 @@ namespace array<br>
 }<br>
 }<br>
 Output:
+![Screenshot 2022-02-04 101746](https://user-images.githubusercontent.com/98145098/152473528-3d20d302-aad3-4ce8-8c80-da4081fcbb56.png)
+
 
 
 
