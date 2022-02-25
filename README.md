@@ -534,4 +534,275 @@ namespace Exercises<br>
 Output:
 
 ![box](https://user-images.githubusercontent.com/98145098/152478631-f5476206-e625-42c0-9eb6-296ab66007c7.png)
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
+11)//c# pgm to create a file , Check the existence of a file//<br>
+using System;<br>
+using System.IO;<br>
+namespace Exercise<br>
+{<br>
+    class FileRead<br>
+    {<br>
+        public static void Main()<br>
+        {<br>
+            string fileName;<br>
+            while (true)<br>
+            {<br>
+                Console.WriteLine("\n.......MENU......\n");<br>
+                Console.WriteLine("\n1.Create a File");<br>
+                Console.WriteLine("\n2.Existence of the File");<br>
+                Console.WriteLine("\n3.Read the contents of the File");<br>
+                Console.WriteLine("\n4.Exit");<br>
+                Console.WriteLine("\nEnter your choice:");<br>
+                int ch = int.Parse(Console.ReadLine());<br>
+                switch (ch)<br>
+                {<br>
+                    case 1:<br>
+                        Console.Write("\nEnter the file name to create:");<br>
+                        fileName = Console.ReadLine();<br>
+                        Console.WriteLine("\nWrite the Contents to the File:\n");<br>
+                        string r = Console.ReadLine();<br>
+                        using (StreamWriter fileStr = File.CreateText(fileName))<br>
+                        {<br>
+                            fileStr.WriteLine(r);<br>
+                        }<br>
+                        Console.WriteLine("File is Created...");<br>
+                        break;<br>
+                    case 2:<br>
+                        Console.Write("\nEnter the file name:");<br>
+                        fileName = Console.ReadLine();<br>
+                        if (File.Exists(fileName))<br>
+                        {<br>
+                            Console.WriteLine("File exits...");<br>
+                        }<br>
+                        else<br>
+                        {<br>
+                            Console.WriteLine("File does not exits in the current directory!");<br>
+                        }<br>
+                        break;<br>
+                    case 3:<br>
+                        Console.Write("Enter the file name to read the contents:\n");<br>
+                        fileName = Console.ReadLine();<br>
+                        if (File.Exists(fileName))<br>
+                        {<br>
+                            using (StreamReader sr = File.OpenText(fileName))<br>
+                            {<br>
+                                string s = "";<br>
+                                Console.WriteLine(" Here is the content of the file : ");<br>
+                                while ((s = sr.ReadLine()) != null)<br>
+                                {<br>
+                                    Console.WriteLine(s);<br>
+                                }<br>
+                                Console.WriteLine("");<br>
+                            }<br>
+                        }<br>
+                        else<br>
+                        {<br>
+                            Console.WriteLine("File does not exists");<br>
+                        }<br>
+                        break;<br>
+                    case 4:<br>
+                        Console.WriteLine("\n Exiting...");<br>
+                        return;<br>
+                    default:<br>
+                        Console.WriteLine("\n Invalid choice");<br>
+                        break;<br>
+            }<br>
+        }<br>
+    }<br>
+}<br>
+Output:
+![exis 1](https://user-images.githubusercontent.com/98145098/155656455-747de1b4-6e06-422d-bff5-de1627e55f93.png)<br>
+![exis 2](https://user-images.githubusercontent.com/98145098/155656437-092b382e-c229-40dd-9f59-2ddeea9ffd50.png)<br>
+![exis 3](https://user-images.githubusercontent.com/98145098/155656402-b60e8410-92d5-4323-b856-ab4b3e740dda.png)<br>
+![exis 4](https://user-images.githubusercontent.com/98145098/155656384-9e3f6bec-0002-4706-af13-4deb9d659c65.png)<br>
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ <br>
+12)//C# Program to Perform File Comparison.//<br>
+using System;<br>
+using System.IO;<br>
+namespace Exercises<br>
+{<br>
+ class FileRead<br>
+ {<br>
+ public static void Main()<br>
+ {<br>
+ string file1;<br>
+ string file2;<br>
+ Console.Write("Enter the first file path:");<br>
+ file1 = Console.ReadLine();<br>
+ Console.Write("Enter the second file path:");<br>
+ file2 = Console.ReadLine();<br>
+ if (!File.Exists(file1))<br>
+ {<br>
+ Console.WriteLine("First file does not exist!");<br>
+ }<br>
+ else if (!File.Exists(file2))<br>
+ {<br>
+ Console.WriteLine("Second file does not exist!");<br>
+ }<br>
+ else if (File.ReadAllText(file1) == File.ReadAllText(file2))<br>
+ {<br>
+ Console.WriteLine("Both files contain the same content");<br>
+ }<br>
+ else<br>
+ {<br>
+ Console.WriteLine("Contents of files are not same");<br>
+ }<br>
+ }<br>
+ }<br>
+}<br>
+
+
+Output:<br>
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
+13)//C# Program to Implement IComparable Interface// <br>
+ using System;<br>
+namespace Exercises<br>
+{<br>
+    class Fraction : IComparable<br>
+    {<br>
+        int z, n;<br>
+        public Fraction(int z, int n)<br>
+        {<br>
+            this.z = z;<br>
+            this.n = n;<br>
+        }<br>
+        public static Fraction operator +(Fraction a, Fraction b)<br>
+        {<br>
+            return new Fraction(a.z * b.n + a.n * b.z, a.n * b.n);<br>
+        }<br>
+        public static Fraction operator *(Fraction a, Fraction b)<br>
+        {<br>
+            return new Fraction(a.z * b.z, a.n * b.n);<br>
+        }<br>
+        public int CompareTo(object obj)<br>
+        {<br>
+            Fraction f = (Fraction)obj;<br>
+            if ((float)z / n < (float)f.z / f.n)<br>
+                return -1;<br>
+            else if ((float)z / n > (float)f.z / f.n)<br>
+                return 1;<br>
+            else<br>
+                return 0;<br>
+        }<br>
+        public override string ToString()<br>
+        {<br>
+            return z + "/" + n;<br>
+        }<br>
+    }<br>
+    class ICompInterface<br>
+    {<br>
+        public static void Main()<br>
+        {<br>
+        Fraction[] a = {<br>
+                        new Fraction(5,2),<br>
+                        new Fraction(29,6),<br>
+                        new Fraction(4,5),<br>
+                        new Fraction(10,8),<br>
+                        new Fraction(34,7)<br>
+ };<br>
+            Array.Sort(a);<br>
+            Console.WriteLine("Implementing the IComparable Interface in " + "Displaying  Fractions: ");<br>
+        foreach (Fraction f in a)<br>
+            {<br>
+                Console.WriteLine(f + " ");<br>
+            }<br>
+            Console.WriteLine();<br>
+            Console.ReadLine();<br>
+        }<br>
+    }<br>
+}<br>
+
+Output:
+![Ic interface](https://user-images.githubusercontent.com/98145098/155656852-e7bf1bab-19be-481f-81bb-6a94480fe7f7.png)
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
+14)//c# pgm to create Thread Pools//<br>
+using System;<br>
+using System.Threading;<br>
+namespace Exercises<br>
+{<br>
+    class ThreadPoolProg<br>
+    {<br>
+        public void ThreadFun1(object obj)<br>
+        {<br>
+            int loop = 0;<br>
+            for (loop = 0; loop <= 4; loop++)<br>
+            {<br>
+                Console.WriteLine("Thread1 is executing");<br>
+            }<br>
+        }<br>
+        public void ThreadFun2(object obj)<br>
+        {<br>
+            int loop = 0;<br>
+            for (loop = 0; loop <= 4; loop++)<br>
+                Console.WriteLine("Thread 2 is executing");<br>
+        }<br>
+        public static void Main()<br>
+        {<br>
+            ThreadPoolProg TP = new ThreadPoolProg();<br>
+            for (int i = 0; i < 2; i++)<br>
+            {<br>
+                ThreadPool.QueueUserWorkItem(new WaitCallback(TP.ThreadFun1));<br>
+                ThreadPool.QueueUserWorkItem(new WaitCallback(TP.ThreadFun2));<br>
+            }<br>
+            Console.ReadKey();<br>
+        }<br>
+    }<br>
+}<br>
+OUTPUT:![Thread](https://user-images.githubusercontent.com/98145098/155656726-01cd3ea6-6a8b-447d-8041-2881f6e5c087.png)
+<br>
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
+15 //c# pgm to demonstrate error handling using try , catch and finally block//<br>
+using System;<br>
+namespace Exercises<br>
+{<br>
+    class ExceptionHandling<br>
+    {<br>
+        static void Main(string[] args)<br>
+        {<br>
+            Age a = new Age();<br>
+            try<br>
+            {<br>
+                a.displayAge();<br>
+            }<br>
+            catch (AgeIsNegativeException e)<br>
+            {<br>
+                Console.WriteLine("AgeIsNegativeException: {0}", e.Message);<br>
+            }<br>
+            finally<br>
+            {<br>
+                Console.WriteLine("Execution of Finally block is done.");<br>
+            }<br>
+        }<br>
+    }<br>
+}<br>
+public class AgeIsNegativeException : Exception<br>
+{<br>
+    public AgeIsNegativeException(string message) : base(message)<br>
+    {<br>
+    }<br>
+}<br>
+public class Age<br>
+{<br>
+    int age = -5;<br>
+    public void displayAge()<br>
+    {<br>
+        if (age < 0)<br>
+        {<br>
+            throw (new AgeIsNegativeException("Age cannot be negative"));<br>
+        }<br>
+        else<br>
+        {<br>
+            Console.WriteLine("Age is: {0}", age);<br>
+        }<br>
+    }<br>
+}<br>
+Output:
+![error handling](https://user-images.githubusercontent.com/98145098/155656792-fbd762be-2eed-4328-9ac6-36e0e32b5f64.png)
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
 
