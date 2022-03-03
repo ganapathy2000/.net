@@ -751,7 +751,8 @@ namespace Exercises<br>
         }<br>
     }<br>
 }<br>
-OUTPUT:![Thread](https://user-images.githubusercontent.com/98145098/155656726-01cd3ea6-6a8b-447d-8041-2881f6e5c087.png)
+OUTPUT:<br>
+![Thread](https://user-images.githubusercontent.com/98145098/155656726-01cd3ea6-6a8b-447d-8041-2881f6e5c087.png)
 <br>
 
 
