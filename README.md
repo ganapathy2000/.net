@@ -805,7 +805,7 @@ Output:
 ![error handling](https://user-images.githubusercontent.com/98145098/155656792-fbd762be-2eed-4328-9ac6-36e0e32b5f64.png)
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<br>
-C# program to find fibonacci:
+16.C# program to find fibonacci:
 using System;
 
 public class FibonacciExample<br>
@@ -831,29 +831,8 @@ Output:
 
 ![image](https://user-images.githubusercontent.com/98145098/156500796-9c1c5bbc-0638-41eb-9b52-2814d53ada42.png)
 
-**C# program to print fibonacci number**<br>
-using System;<br>
-public class FibonacciExample<br>
-{<br>
-    public static void Main(string[] args)<br>
-    {<br>
-        int n1 = 0, n2 = 1, n3, i, number;<br>
-        Console.Write("Enter the number of elements: ");<br>
-        number = int.Parse(Console.ReadLine());<br>
-        Console.Write(n1 + " " + n2 + " ");  <br>
-        for (i = 2; i < number; ++i)    <br>
-        {<br>
-            n3 = n1 + n2;<br>
-            Console.Write(n3 + " ");<br>
-            n1 = n2;<br>
-            n2 = n3;<br>
-        }<br>
-    }<br>
-}<br>
-**Output**<br>
-![image](https://user-images.githubusercontent.com/98141713/155659583-553702b5-9b78-4f85-9050-8aaeff954ae7.png)<br>
 
-**C# program to check whether entered number is prime or not**<br>
+17.**C# program to check whether entered number is prime or not**<br>
 using System;<br>
 public class PrimeNumberExample<br>
 {<br>
@@ -882,7 +861,7 @@ public class PrimeNumberExample<br>
 ![image](https://user-images.githubusercontent.com/98141713/155660665-e448aef8-82f2-4252-84de-7905bc161e05.png)<br>
 
 
-**C# program to check whethe the entered number is palindrome or not.**<br><br>
+18.**C# program to check whethe the entered number is palindrome or not.**<br><br>
 
 using System;<br>
 public class PalindromeExample<br>
@@ -910,7 +889,7 @@ public class PalindromeExample<br>
 ![image](https://user-images.githubusercontent.com/98141713/155661626-d0438f5e-ea44-49a0-ac02-b503253a037b.png)<br>
 ![image](https://user-images.githubusercontent.com/98141713/155661756-d96a69ee-f912-4ab1-ae5d-ea00f975d43d.png)<br>
 
-**C# program to find the factorial of the number**<br>
+19.**C# program to find the factorial of the number**<br>
 
 using System;<br>
 public class FactorialExample<br>
@@ -931,7 +910,7 @@ public class FactorialExample<br>
 **Output**<br>
 ![image](https://user-images.githubusercontent.com/98141713/155662479-c356c2e3-f20f-45ca-a7be-88306b2b0e90.png)<br>
 
-**C# program to check the armstrong number**<br>
+20.**C# program to check the armstrong number**<br>
 
 using System;<br>
 public class ArmstrongExample<br>
@@ -959,7 +938,7 @@ public class ArmstrongExample<br>
 ![image](https://user-images.githubusercontent.com/98141713/155665893-e0365ce6-0844-4227-90b9-55f023170d69.png)<br>
 ![image](https://user-images.githubusercontent.com/98141713/155665984-5cc2ffd2-bf88-4722-a31a-835727e4d048.png)<br>
 
-**C# program to check the sum of the numbers**<br>
+21.**C# program to check the sum of the numbers**<br>
 
 using System;<br>
 public class SumExample<br>
@@ -983,7 +962,7 @@ public class SumExample<br>
 ![image](https://user-images.githubusercontent.com/98141713/155667382-eb0a3d88-88ff-4613-85dc-8fda7124a346.png)<br>
 
 
-**C# program to reverese a number**<br>
+22.**C# program to reverese a number**<br>
 
 using System;<br>
 public class ReverseExample<br>
